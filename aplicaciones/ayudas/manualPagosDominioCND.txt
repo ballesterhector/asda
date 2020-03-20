@@ -1,0 +1,14 @@
+Para registrar los pagos
+1) depositar una unidad tributaria en bancoo venezuela.
+2)escanear el pago.
+3)ingresar a solicitudes.nic.ve
+4)pulsar pago
+5)nombre dominio = cnd
+6)extension com.ve
+7)tipo pago = deposito
+8)ingrese código de verificación
+9)seleccione el archivo escaneado en el punto Nº2
+10)pulse guardar
+
+usuario hector.ballester@cnd.com.ve
+Pass	consejo123 

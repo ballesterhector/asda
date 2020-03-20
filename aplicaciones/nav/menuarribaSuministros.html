@@ -1,0 +1,210 @@
+<div class="enlace font">
+	<nav class="navbar ">
+		<div class="">
+		    <!-- primer nav logo que se activa al bajar amaňo de la pantalla-->
+		    <div class="navbar-header ">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#data_etiqueta" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar navbar-inverse"></span>
+		        <span class="icon-bar navbar-inverse"></span>
+		        <span class="icon-bar navbar-inverse"></span>
+		      </button>
+		    </div>
+			<!-- fin primer nav -->
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="data_etiqueta">
+			<!-- inicio de las listas -->
+				<ul class="nav navbar-nav">
+			<!-- nav pagina principal-->
+			        <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Principal <span class="caret"></span></a>
+			            <ul class="dropdown-menu" role="menu">
+                            <li><a href="index_Entrada.php">Página principal</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://correo.cnd.com.ve" target="_blank">Webmail</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="salir.php">Salir</a></li>
+                        </ul>
+					</li>
+		    <!-- fin nav pagina principal -->
+			<!-- nav administrador -->
+	   				<li class="dropdown">
+	   					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador<span class="caret"></span></a>
+	   					<ul class="dropdown-menu">
+	   						<li class="dropdown dropdown-submenu"><!--usuario-->
+	   							<a href="#" class="dropdown-toggle" id="usuar" data-toggle="dropdown">Usuarios</a>
+	   							<ul class="dropdown-menu">
+	   								<li><a href="usuarios.php" class="ocultar">Datos</a></li>
+	   							</ul>
+	   						</li>
+	   					</ul>
+	   				</li>
+	   		<!-- fin nav administrador-->
+			<!-- nav Transporte -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Conteos<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown dropdown-submenu"><!--clientes-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ciclicos</a>
+								<ul class="dropdown-menu" >
+									<li><a href="ciclicoData.php?clibus=0&identificador=0">Data</a></li>
+								</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--clientes-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Conteos</a>
+								<ul class="dropdown-menu" >
+									<li><a href="conteo.php?clibus=0&identificador=0">Data unidades</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+			<!--FIN  nav Transporte -->
+			<!-- nav Almacen -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Consultas<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown dropdown-submenu"><!--recepciones-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Recepciones</a>
+								<ul class="dropdown-menu">
+									<li><a href="recepcionesEmitidas.php?clibus=0&del=0&al=0"><i class="text-warning">Lista</i></a></li>
+								</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--picking-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Picking List</a>
+								<ul class="dropdown-menu">
+									<li><a href="pickinListEmitidos.php?clibus=0&del=0&al=0"><i class="text-warning">Emitidos</i></a></li>
+									<li><a href="pickingListFamilia.php"><i class="text-warning">Peso por familia</i></a></li>
+								</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--despacho-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Despachos</a>
+								<ul class="dropdown-menu">
+									<li><a href="despachosEmitidos.php?clibus=0&del=0&al=0">Lista</a></li>
+								</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--despacho-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transferencias</a>
+								<ul class="dropdown-menu">
+									<li><a href="transferenciasEmitidas.php?clibus=0&del=0&al=0">Lista</a></li>
+								</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--despacho-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Modificaciones</a>
+								<ul class="dropdown-menu">
+								    <li><a href="modificacionesClientes.php?clibus=0">Clientes</a></li>
+								    <li><a href="modificacionesConductores.php">Conductores</a></li>
+								    <li><a href="modificacionesDespachos.php?clibus=0">Despachos</a></li>
+									<li><a href="modificacionesEtiquetas.php?clibus=0&del=0&al=0">Etiquetas</a></li>
+									<li><a href="modificacionesPicking.php?clibus=0">Picking List</a></li>
+                                    <li><a href="modificacionesProductos.php?clibus=0">Productos</a></li>
+                                    <li><a href="modificacionesRecepciones.php?clibus=0">Recepciones</a></li>
+                                    <li><a href="modificacionesTransportes.php">Transportes</a></li>
+                                    <li><a href="modificacionesUsuarios.php">Usuarios</a></li>
+                                    <li><a href="modificacionesVehiculos.php">Vehículos</a></li>
+								</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--Inventarios-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Inventarios</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-submenu"><!--teorico-->
+											<a href="#">Resumen</a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="suministrosInventarioResumen.php">Por Uso</a></li>
+												<li><a href="inventarioTeoricoEtiqueta.php?id_cliente=0">Por etiqueta</a></li>
+												<li><a href="inventarioTeoricoLote.php?id_cliente=0">Por lote</a></li>
+												<li><a href="inventarioEvolucion.php?id_cliente=0">Evolución</a> </li>
+											<!--<li><a href="graphs.php">Graficos</a></li>-->
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--coordenadas-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Coordenadas</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-submenu"><!--posicione-->
+											<a href="#">Reportes</a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="inventario_resumen.php?id_cliente=0">Por código</a></li>
+												<li><a href="inventario_teorico_etiqueta.php?id_cliente=0">Por coordenadas</a></li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+
+						</ul>
+					</li>
+			<!--FIN  nav Transporte -->
+			<!-- nav proveeduria -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Suministros<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown dropdown-submenu"><!--usuario-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Empleados</a>
+									<ul class="dropdown-menu">
+										<li><a href="#" onClick="niveles_0_0()"><i class="text-warning">Lista</i></a></li>
+									</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--Impuest-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Insumos</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Datos</a></li>
+									</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--Seguros-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Solicitudes</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Nueva</a></li>
+										<li><a href="#">Entregas</a></li>
+									</ul>
+							</li>
+						</ul>
+					</li>
+			<!-- fin nav proveeduria-->
+			<!-- nav proveeduria -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Movimientos<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown dropdown-submenu"><!--usuario-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Etiquetas Modificar<n></n></a>
+							    <ul class="dropdown-menu">
+									<li><a href="modificarUbicacion.php?clibus=0&del=0&al=0">Ubicación</a></li>
+									<li><a href="modificarAlmacen.php?clibus=0&del=0&al=0">Almacen</a></li>
+									<li><a href="modificarLote.php?clibus=0&del=0&al=0">Lote</a></li>
+									<li><a href="modificarCoordenada.php?clibus=0&del=0&al=0">Coordenada</a></li>
+                                    <li><a href="modificarManual.php?clibus=0&del=0&al=0">Manual</a></li>
+								</ul>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown dropdown-submenu"><!--Impuest-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transferencias</a>
+									<ul class="dropdown-menu">
+										<li><a href="transferencias.php">Unidades</a></li>
+										<li><a href="transferenciasCliente.php">Clientes</a></li>
+									</ul>
+							</li>
+						</ul>
+					</li>
+			<!-- fin nav proveeduria-->
+
+	   			</ul>
+			 <!-- fin de las listas -->
+
+
+							<!-- ultimo nav salir -->
+					    <ul class="nav navbar-nav navbar-right">
+					    	<li><a href="cerrarSession.php">Salir</a></li>
+					    </ul>
+					      <!-- fin ultimo nav -->
+		 	</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</div>

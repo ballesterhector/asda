@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8-8">
+		<meta name="description" content="Aplicación para control de bienes y suministros">
+		<meta name="keywords" content="asda">
+		<meta name="author" content="Ballester Héctor @ballesterhector">
+		<meta name="viewport" content="width=device-width, user-scalable=0,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+		<title>ASDA On Line</title>
+		<link rel="stylesheet" type="text/css" href="aplicaciones/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="aplicaciones/font-awesome/css/fontawesome-all.css">
+		<link rel="stylesheet" type="text/css" href="aplicaciones/css/sweetalert.css">
+		<link rel="stylesheet" type="text/css" href="aplicaciones/css/estilosFlex.css">
+	</head>
+
+	<body class="body">
+		<div class="logoindex">
+			<img src="aplicaciones/imagenes/asda.png" alt="" class="" style="">
+		</div>
+
+		<div class="container">
+			<div class="flat-form">
+				<div class="tabs">
+					<a href="#login" class="active btn btn-success" id="logins">Ingresar</a>
+					<a href="#register" class="btn btn-warning" id="registers">Registrar</a>
+					<a href="#reset" class="btn btn-danger" id="resets">Resetear</a>
+				</div>
+				<div id="login" class="form-action show">
+					<h1>Ingresar al WMS</h1>
+					<p class="">
+						Debe contar con un nivel de usuario para ingresar.
+					</p>
+					<form action="index_valida.php" method="get">
+						<input type="text" name="usua" id="usua" placeholder="Usuario" required="require" autocomplete="off" autofocus="autofocus"/>
+						<input type="password" name="passw" placeholder="Contraseňa" required="require" />
+						<div class="ayud">
+                            <input type="submit" value="Login" class="buttonindex" />
+                            <a href="#" onclick="window.open('http:aplicaciones/ayudas/login.pdf')" /><i class="fas fa-book fa-3x" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Manual"></i></a>
+					    </div>
+					</form>    
+				</div>
+				<!--/#login.form-action-->
+				<div id="register" class="form-action hide">
+					<h1>Registro</h1>
+					<p>
+						Registre sus datos y solicite a su supervisor que le asigne un nivel de usuario.
+					</p>
+					<form id="formularioregistro" onsubmit="return registro();">
+						<div class="registro">
+							<article class="a">
+								<input type="hidden" name="proceso" id="registra" value="Registro" autocomplete="off"/>
+								<input type="text" name="name" id="nameregistrar" placeholder="Nombre" required="require" autocomplete="off" />
+								<input type="number" name="cedul" id="cedula" placeholder="cedula" required="require" autocomplete="off"  />
+								<input type="text" name="usua" placeholder="Usuario" required="require" autocomplete="off"  />
+								<input type="email" name="email" placeholder="Email"  autocomplete="off" />
+							</article>
+							<article class="b">
+								<input type="text" name="telef" placeholder="Teléfono" autocomplete="off" />
+								<input type="text" placeholder="Nivel asignado = 0" disabled="disabled" autocomplete="off" />
+								<input type="password" name="clave" id="clave" placeholder="Contraseňa" required="require" autocomplete="off" />
+								<input type="password" id="claveR" placeholder="Repita contraseňa" required="require" autocomplete="off"/>
+							</article>
+						</div>
+						<div class="mensajeindex">
+							<input type="submit" value="Registrar" class="buttonindex" id="reg" />
+							<div class="alertas" id="alertas"></div>
+						</div>
+					</form>
+				</div>
+				<!--/#register.form-action-->
+				<div id="reset" class="form-action hide">
+					<h1>Resetear contraseňa</h1>
+					<p>
+						Olvido su contraseña?, ingrese los siguientes datos.
+					</p>
+					<form id="formularioresetea" onsubmit="return resetea();">
+						<input type="hidden" name="proceso" id="resetear" value="resetea"/>
+						<input type="number" name="cedul" id="cedularesetear" placeholder="Cedula" autocomplete="off" />
+						<input type="text" name="usuario" id="usuarioresetea" placeholder="Usuario" autocomplete="off" />
+						<input type="password" name="clave" id="nuevopass"  placeholder="Nueva contraseňa" required="require" autocomplete="off" />
+						<div class="mensajeindex">
+							<input type="submit" value="Resetear" class="buttonindex" id="rest"/>
+							<div class="alertas" id="alertasresetea"></div>
+						</div>
+						
+
+					</form>
+				</div>
+				<!--/#register.form-action-->
+			</div>
+		</div>
+		<div>
+			<script src="aplicaciones/js/jquery-3.2.1.min.js"></script>
+			<script src="aplicaciones/js/bootstrap.min.js"></script>
+			<script src="aplicaciones/js/sweetalert.min.js"></script>
+			<script src="aplicaciones/js/index.js"></script>
+		</div>
+		
+	</body>
+</html>

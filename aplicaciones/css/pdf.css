@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {/* Old browsers */
+	background: #fff;
+	font: 14px Helvetica;
+   	padding: 10px;
+	color: #085ca5;
+}
+
+    header {
+    	display: flex;
+		flex-flow: column;
+	}
+
+    header > .tablaPdf{
+        display: flex;
+        flex-flow: row nowrap;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    header  .acta{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #main {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    
+    #main .ladoA{
+       padding: 0 40px 40px 0px;
+    }
+
+
+    table{
+    font-size: 12px;
+}
+
+    .tabla1 .unidades{
+        width: 90px;
+    }
+
+    .tabla1 .productos{
+        text-transform: lowercase ;
+    }
+
+    .tablacesta .unidades{
+        width: 90px;
+    }
+
+    .tablacesta .codigo{
+        width: 100px;
+    }
+
+    .tablacesta .producto{
+        text-transform: lowercase ;
+        width: 300px;
+    }
+
+    .data, .cesta{ 
+        padding-bottom: 20px;
+    }
+
+   .firma{
+        flex-direction: column;
+    }    
+
+    .tablaD > #capa1{
+        width: 100%;
+        
+    }
+
+    #capa1{ position:absolute; z-index:2; }
+
+    #capa2{ position:absolute; z-index:0; } 
+
+    /*para colocar dato a pie de pagina*/
+    .fixed {
+        position: fixed;
+        bottom: 40px;/*a mayor número mas arriba en la pagina*/
+        right: 0;
+        width: 420px;
+        background-color: white;
+    }

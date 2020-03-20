@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="utf-8-8">
+        <meta name="description" content="Aplicación para control de bienes y suministros">
+        <meta name="keywords" content="asda">
+        <meta name="author" content="Ballester Héctor @ballesterhector">
+        <meta name="viewport" content="width=device-width, user-scalable=0,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+        <title>ASDA On Line</title>
+        <link rel="icon" type="image/png" href="aplicaciones/imagenes/asda.png" sizes="32x32">
+        <link rel="stylesheet" type="text/css" href="aplicaciones/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="aplicaciones/css/nav5.css">
+        <link rel="stylesheet" type="text/css" href="aplicaciones/css/bootstrap-submenu.min.css">
+        <link rel="stylesheet" type="text/css" href="aplicaciones/font-awesome/css/fontawesome-all.css">
+        <link rel="stylesheet" type="text/css" href="aplicaciones/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="aplicaciones/css/sweetalert.css">
+        <link rel="stylesheet" type="text/css" href="aplicaciones/css/estilosFlex.css">
+        <body oncontextmenu="return false"><!--evitar que copien el codigo fuente de mi pagina, no permite boton derecho-->
+    </head>

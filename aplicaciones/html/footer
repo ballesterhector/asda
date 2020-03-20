@@ -1,0 +1,7 @@
+    <script src="aplicaciones/js/jquery-1.11.1.min.js"></script>
+    <script src="aplicaciones/js/bootstrap.min.js"></script>
+    <script src="aplicaciones/js/bootstrap-submenu.min.js"></script>
+    <script src="aplicaciones/js/jquery.dataTables.min.js"></script>
+    <script src="aplicaciones/js/sweetalert.min.js"></script>
+    <script src="aplicaciones/js/jsConstantes.js"></script>  
+    

@@ -1,0 +1,943 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.body {
+/* Ubicación de la imagen */
+
+background-image:     url(./fondos/azu12.jpg);
+
+
+/* Para dejar la imagen de fondo centrada, vertical y
+
+horizontalmente */
+
+background-position: center center;
+
+/* Para que la imagen de fondo no se repita */
+
+background-repeat: no-repeat;
+
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+background-attachment: fixed;
+
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+background-size: cover;
+
+/* Se muestra un color de fondo mientras se está cargando la imagen
+
+de fondo o si hay problemas para cargarla */
+
+
+}
+
+.logoindex {
+	color: aliceblue;
+	font-size: 30px;
+}
+
+.logoindex img {
+	width: 150px;
+	height: 50px;
+	vertical-align: top;
+	filter: alpha(opacity=45);
+	-moz-opacity: .45;
+	opacity: .45;
+}
+
+.flat-form {
+	background: #2c91f8;
+	box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.5);
+	border: 1px solid #2c91f8;
+	-webkit-border-radius: 10px 10px;
+	-moz-border-radius: 10px 10px;
+	padding: 10px;
+	margin: 25px auto;
+	width: 390px;
+	height: 370px;
+	position: relative;
+	font-family: 'Roboto';
+}
+
+.fallido-form {
+	background: #2c91f8;
+	text-align: center;
+	box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.5);
+	border: 1px solid #2c91f8;
+	-webkit-border-radius: 10px 10px;
+	-moz-border-radius: 10px 10px;
+	padding: 10px;
+	margin: 25px auto;
+	width: 390px;
+	height: 170px;
+	font-family: 'Roboto';
+}
+
+.tabs {
+	height: 40px;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.tabs a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.tabs a:hover {
+	text-transform: uppercase;
+}
+
+.form-action {
+	padding: 0 20px;
+	position: relative;
+}
+
+form input {
+	font-family: 'Roboto';
+	font-size: 11px;
+}
+
+#loguear{
+	width: 20rem;
+  }
+  
+  form .ayud{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+  }
+
+form input {
+	-webkit-border-radius: 10px 10px;
+	-moz-border-radius: 10px 10px;
+	width: 100%;
+	height: 40px;
+    color: #000;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	border: none;
+	outline: none;
+}
+
+form input:hover {
+	background: #b1f88b;
+	color: #000;
+	font-weight: bold;
+}
+
+form select:hover {
+	background: #b1f88b;
+	color: #000;
+	font-weight: bold;
+}
+
+.buttonindex {
+	margin-top: 10px;
+	border: none;
+	display: block;
+	background: #136899;
+	height: 40px;
+	width: 80px;
+	color: #ffffff;
+	text-align: left;
+	border-radius: 5px;
+	box-shadow: 2px 4px 1px #2075aa;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+.button:hover {
+	background: #1e75aa;
+	/*box-shadow: 0 3px 1px #237bb2;*/
+}
+
+.button:active {
+	background: #136899;
+	/*box-shadow: 0 3px 1px #0f608c;*/
+}
+
+.topregist{
+	margin-top: -70px;
+}
+
+.registro {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.registro .a {
+	padding-right: 12px;
+	width: 35%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.registro .b {
+	width: 20%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.registro .a input{
+	width: 25em;
+}
+
+
+.mensajeError {
+	color: #0912f4;
+}
+
+#reset{
+	width: 45em;
+}
+
+#reset input{
+	width: 10em;
+}
+
+/*CSS para la pagina index_entrada.php=========================================================================================*/
+
+
+
+body {/* Old browsers */
+	background: #fff;
+	font: 12px Helvetica;
+   	padding: 10px;
+	color: #085ca5;
+}
+
+	header {
+		display: block;
+        height: 150px;
+        padding: 15px;
+        border: 1px solid #eebb55;
+        border-radius: 7pt;
+       	display: flex;
+		flex-flow: column;
+	}
+
+	footer {
+		display: block;
+        padding: 15px;
+        border: 1px solid #eebb55;
+        border-radius: 7pt;
+       	display: flex;
+		flex-flow: column;
+	}
+
+	header .menu, .enlinea{
+        font-size: 15px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+    header .menu .enlaces{
+		padding-right: 140px;
+	}
+	
+	header .enlinea .titulo{
+		margin-top: -25px;
+	}
+
+	header .logo {
+		font-size: 20px;
+	}
+
+	header .nuevo {
+		min-width: 150px;
+		justify-content: space-around;
+        
+	}
+
+	header .edicion {
+		width: 40%;
+        display: flex;
+        flex-flow: row;
+	}
+
+	header .edicion i:hover {
+		background: #A6F6BD;
+		cursor: pointer;
+	}
+
+	header .ayuda {
+	    min-width: 50px;
+		justify-content: space-around;
+        
+	}
+
+	header .logo img {
+		width: 100px;
+		height: 50px;
+		vertical-align: top;
+		filter: alpha(opacity=45);
+		-moz-opacity: .45;
+		opacity: .45;
+	}
+
+	header nav a {
+		text-decoration: none;
+		font-size: 12px;
+    }
+
+    header > .recepcion{
+	    width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > .recepcion > .titulo {
+		display: flex;
+        flex-flow: row wrap;
+        order: 1;
+    }
+
+    header > .recepcion > .clienteselect{
+		background: #A6F6BD;
+		display: flex;
+        flex-flow: row wrap;
+        order: 2;
+    }
+
+    header > .recepcion > .fechas{
+		width: 420px;
+	    display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        order: 3;
+    }
+
+    header > .recepcion > .ayuda{
+		width: 80px;
+		display: flex;
+	    flex-flow: row;
+        justify-content: space-between;
+        order: 4;
+    }
+
+    header > .recepcion > .ayudapick{
+        width: 200px;
+    }
+
+    header > .recepcion > .ayudarecepcion{
+		width: 440px;
+        display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		order: 4;
+    }
+
+    header > .recepcion > .ayudaciclico{
+        width:  300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+	#main table .icono{
+	font-size: 12px;
+	display: flex;
+    border: none;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+   
+	}
+
+	#main table .icono2{
+	background: blue;
+	font-size: 1.3em;
+	display: flex;
+	flex-flow: row;
+    border: none;
+   	}
+
+    #main {
+        min-height: 400px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row;
+    }
+ 
+    #main > .usuario {
+        margin: 4px;
+        padding: 20px 20px 0px 70px;
+		font-size: 14px;
+		display: flex;
+		flex-flow: row;
+        flex: 4 1 50%;
+        order: 2;
+    }
+
+        #main > .usuario .usuA{
+            width: 140px;
+            padding-right: 20px;
+        }
+
+	#main > .usuario .form-control{
+		background: #e7eff8;
+	}
+
+	#main > .usuario .form-control:hover{
+		background: #f8e7f8;
+	}
+
+		#main > article > form > .recepcio  input{
+			width: 120px;
+			padding-left: 15px;
+		}
+
+		#main > article > form > .emitirCesta  input{
+			width: 100px;
+			padding-left: 15px;
+		}
+
+		#main > article > form > .boton{
+			padding-top: 30px;
+			text-align: right;
+            width: 90px;
+		}
+
+	#main > .tabla {
+        margin: 4px;
+        padding: 25px 10px 0px 20px;
+		border: 1px solid #cccc33;
+        border-radius: 7pt;
+		font-size: 10px;
+		display: flex;
+		flex-flow: column;
+        flex: 6 1 40%;
+        order: 2;
+    }
+
+    #main > .tablainfo {
+    	margin: 4px;
+        padding: 25px 10px 0px 20px;
+		border: 1px solid #cccc33;
+        border-radius: 7pt;
+		font-size: 10px;
+		display: flex;
+		flex-flow: column;
+        flex: 6 1 20%;
+        order: 2;
+    }
+
+	
+	#main > .tablaciclico {
+		margin: 4px;
+        padding: 25px 10px 0px 20px;
+		border: 1px solid #cccc33;
+        border-radius: 7pt;
+		font-size: 10px;
+		display: flex;
+		flex-flow: column;
+        flex: 4 1 40%;
+        order: 2;
+    }    
+
+        .tablasEnc{/*tabla pdf ciclico*/
+            padding: 20px 20px 0px 20px;
+        }
+
+        h1.SaltoDePagina
+         {
+          page-break-after: always;
+          border: 0;
+          margin-top: auto;
+          padding: 0;
+         }
+
+    .letra{
+        font-size: 10px;
+    }
+
+    .letra1{
+        font-size: 11px;
+    }
+
+		#main .th{
+			border: 0;
+		}    
+		#main > .tabla .tamano{
+			width: 3px;
+		}
+
+	#main > .conduc{
+		margin: 4px;
+		padding: 25px 80px 0px 80px;
+		border: 1px solid #cccc33;
+		border-radius: 7pt;
+		font-size: 10px;
+		display: flex;
+		flex-flow: column;
+		flex: 4 1 40%;
+		order: 2;
+	}
+
+	#main > .vehiculo{
+		margin: 4px;
+		padding: 25px 130px 0px 130px;
+		border: 1px solid #cccc33;
+		border-radius: 7pt;
+		font-size: 12px;
+		display: flex;
+		flex-flow: column;
+		flex: 4 1 40%;
+		order: 2;
+	}
+
+	#main > .tablaUser{
+		margin: 4px;
+		padding: 25px 30px 0px 30px;
+		border: 1px solid #cccc33;
+		border-radius: 7pt;
+		font-size: 12px;
+		display: flex;
+		flex-flow: column;
+		flex: 4 1 40%;
+		order: 2;
+	}
+
+		#main > .tabla  .identif{
+			background: #f7d3f5;
+		}
+
+		#main > .tabla  .empaque{
+			background: #bff4b6;
+		}
+
+		#main > .tabla  .unidades{
+			background: #b6cef4;
+		}
+
+    #main > nav {
+		line-height: 30px;
+		text-align: left;
+		text-decoration: none;
+		margin: 4px;
+        padding: 5px 0px 0px 0px;
+		border: 1px solid #cccc33;
+        border-radius: 7pt;
+        display: flex;
+		flex-flow: column;
+        flex: 1 6 10%;
+        order: 1;
+    } 
+
+		#main > nav > a{
+			padding-left: 5px;
+			text-transform: uppercase;
+		}
+
+		#main > nav > a:hover{
+			background: aliceblue;
+			color: cadetblue;
+		}
+
+            aside > .del{
+                padding: 10px 0 10px 0;
+                display: flex;
+                flex-flow: row wrap;
+            }
+        
+            aside > .del > label{
+                padding-right: 10px;
+            }
+
+            aside > .del > i{
+                padding-left: 10px;
+            }
+
+            aside > .almacen{
+                padding: 10px 0 10px 0;
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            aside > .almacen > label{
+                padding-right: 10px;
+            }
+
+            aside > .almacen > i{
+                padding-left: 10px;
+            }
+  
+    	#main > aside {
+			margin: 4px;
+			padding: 5px;
+			border: 1px solid #cccc33;
+			border-radius: 7pt;
+			text-align: center;
+            flex-flow: column;
+			flex: 1 4 20%;
+			order: 3;
+		}
+
+        #main > aside > img{
+            width: 150px;
+            height: 130px;
+            vertical-align: center;
+            filter: alpha(opacity=25);
+            -moz-opacity: .25;
+            opacity: .25;
+            -webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
+            -moz-transition: -moz-transform 1s ease-in-out 0.5s;
+        }
+
+	footer {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.respuesta{
+		font-size: 28px;
+		color: brown;
+		padding: 10px;
+	}
+
+	.modalProductos select{
+		font-size: 12px; 
+	}
+
+	.modalProductos input{
+		font-size: 12px;
+	}
+
+	.modalProductos .ladoA .subladotop{
+		display: flex;
+		flex-flow: row;
+	}
+	
+	.modalProductos  .subladoA, .subladoB, .subladoC, .subladoD,  .subladoF, .subladoR{
+		padding-top: 8px;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+	}
+
+		.modalProductos .subladoC input{
+        	width: 80px;
+		}
+
+		.modalProductos .subladoC .tempe{
+			background: #fcfcd8;
+			text-align: right;
+		}
+
+		.modalProductos .subladoC .palet{
+			background: #f6d8fc;
+			text-align: center;
+		}
+
+		.modalProductos .subladoC .palet{
+			background: #f6d8fc;
+			text-align: center;
+		}
+
+		.modalProductos .ladoA .subladoG {
+			width: 100%;
+			display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            
+		}
+
+        .modalProductos .subladoG select{
+			background: #f6d8fc;
+			width: 260px;
+        }
+
+        .modalProductos .subladoR input{
+        	width: 60px;
+        }
+
+        .modalProductos .subladoR label{
+            margin-top: -18px;
+		}  
+
+        .puerto{
+            font-size: 10.3px;
+            padding-right: 3.6px;
+        }
+
+		.pieData{
+			padding: 10px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+		}
+
+	.modalConductor{
+		padding-bottom: 20px;
+	}
+
+	footer  .tablaEtiqueta{
+		width: 90%;
+		font-size: 10px;
+		padding: 10px 0px 0px 70px;
+	}
+
+	.datosCliente{
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+		.datosCliente  .datosA, .datosB,.datosD{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+			.datosCliente .names{
+				width: 350px;
+			}
+
+			.datosCliente .center{
+				text-align: center;
+			}
+			
+			.datosCliente .datosC{
+				padding-bottom: 10px;
+			}
+
+            .datosCliente .datosB .labelG{
+				display: flex;
+                flex-flow: column;
+			}
+
+            .datosCliente .datosB .labelG .labelGg{
+				display: flex;
+                flex-flow: row;
+			}
+
+			.datosCliente .datosC .direccion{
+				width: 850px;
+			}
+
+			.datosCliente .datosD input{
+				text-align: center;
+				width: 45%;
+			}
+
+			.datosCliente .datosD select{
+				width: 100%;
+				padding-right: 10px;
+			}
+
+    .datosProductos {
+        display:  flex;  
+        flex-flow: row wrap;
+        
+    }
+
+        .datosProductos .productoC input{
+            width: 70px;
+            text-align: center;
+        }
+
+        .tablaPdf .tablaA{
+            padding: 30px 0px 0px 30px;
+            font-size: 14px;
+        }
+
+        .tablaPdf .tablaB{
+            padding: 10px 0px 30px 40px;
+            font-size: 11px;
+        }
+
+        .tablaPdf .tablaC{
+            padding: 0px 0px 0px 245px;
+            font-size: 11px;
+        }
+
+        .tablaPdf .tablaD{
+            padding: 50px 0px 0px 20px;
+        }
+
+		.tabladatos{
+			text-transform: capitalize;
+			font-size: 10px;
+		}
+
+	.tablaPdf #capa1{ position:absolute; z-index:1; }
+
+    .tablaPdf #capa2{ position:absolute; z-index:0; } 
+
+	.mensaje {
+		color: #000;
+		font-size: 24px;
+	}
+
+	.mensajeError {
+		color: #000;
+		font-size: 24p;
+	}
+    
+    .cabeza{
+        background: #bff4f0;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .datospicking{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .datospicking .pedidas{
+        padding-top: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+	.modalconteos .ladoA{
+		padding: 4px 0px 0px 70px;
+		display: flex;
+		flex-flow: row;
+	}
+
+		.modal-body .form-control:hover{
+			background: #bff4f0;
+		}
+
+		.modalconteos .ladoA label{
+			text-align: center;
+		}
+
+		.modalconteos .ladoA .subladoEmp{
+			padding: 0px 80px 0px 0px;
+			display: flex;
+			flex-flow: column;
+		}
+
+		.modalconteos .ladoA .subladoUni{
+			display: flex;
+			flex-flow: column;
+		}
+
+		.modalconteos .ladoA .tops{
+			padding-top: 20px;
+		}
+
+    /*almacen paletas*/
+    .paletas > article{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+        .paletas > article > .ladoB{
+            padding-top: 10px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+
+        .paletas > article > .ladoC{
+            padding-top: 10px;
+            display: flex;
+            flex-flow: row;
+        }
+
+        
+    /*transferencias*/
+   #main > .tablatransf{
+		display:inline-block;/*para que resulte el float*/
+    }
+        
+        #main .tablatransf .datos{
+			float: left;
+		}
+		
+		#main .tablatransf .datos label{
+			padding-left: 2rem;
+		}
+
+		#main .tablatransf .datos .numero{
+			width: 13rem;
+			text-align: center;
+		}	
+
+        #main .tablatransf .etique{
+            float: left;
+		}   
+		
+		#main .tablatransf .etique label{
+			padding-left: 2rem;
+		}
+
+        /*transferencias*/
+
+    .abajo{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    /*para colocar dato a pie de pagina*/
+    .fixed {
+        position: fixed;
+        bottom: 40;/*a mayor número mas arriba en la pagina*/
+        right: 0;
+        width: 300px;
+        background-color: white;
+    }
+
+    /*css para suministros*/
+    #main> .compras{
+        display: flex;
+        flex-flow: column;
+        order: 3;
+    }
+
+       
+    #main > .comprasTamano{
+        width: 60%;
+    }
+
+    /*css para suministros*/
+
+    /*pdf despacho manual*/
+#mensajedespmanual{
+    margin-top: 120px;
+}
+    /*fin pdf*/
+
+    /* Too narrow to support three columns */
+    @media all and (max-width: 640px) {
+        #main, #page {
+            flex-direction: column;
+        }
+
+        #main > article, #main > nav, #main > aside {
+        /* Return them to document order */
+            order: 0;
+        }
+  
+        #main > nav, #main > aside, header, footer {
+            min-height: 50px;
+            max-height: 50px;
+        }
+    }
